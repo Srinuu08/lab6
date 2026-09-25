@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Result Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Student Result Management System</h1>
+            
+        </div>
+
+        <form id="resultForm">
+
+            <div class="form-group">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" placeholder="Enter student name">
+            </div>
+
+            <div class="form-group">
+                <label for="roll">Roll Number</label>
+                <input type="text" id="roll" placeholder="Enter roll number">
+            </div>
+
+            <div class="form-group">
+                <label for="oops">OOPS</label>
+                <input type="number" id="oops" placeholder="Enter OOPS marks">
+            </div>
+
+            <div class="form-group">
+                <label for="frontend">Frontend</label>
+                <input type="number" id="frontend" placeholder="Enter Frontend marks">
+            </div>
+
+            <div class="form-group">
+                <label for="fullstack">Mathematics using Data Science</label>
+                <input type="number" id="fullstack" placeholder="Enter Mathematics using Data Science marks">
+            </div>
+
+            <div class="form-group">
+                <label for="soa">AI & ML</label>
+                <input type="number" id="soa" placeholder="Enter AI & ML marks">
+            </div>
+
+            <div class="form-group">
+                <label for="datascience">Embedded</label>
+                <input type="number" id="datascience" placeholder="Enter Embedded marks">
+            </div>
+            <br><br>
+
+            <div class="buttons">
+
+                <button type="button" onclick="calculateResult()">
+                    Calculate Result
+                </button>
+
+                <button type="reset" class="clear-btn">
+                    Clear
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- Result Table -->
+
+        <div class="result-section">
+
+            <h2>Student Results</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Roll Number</th>
+                            <th>Total</th>
+                            <th>Percentage</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
